@@ -1,0 +1,3 @@
+#!/bin/bash
+
+dotenv -- nodemon -e ts,graphql -x ts-node src/index.ts

@@ -1,0 +1,37 @@
+{
+  "name": "gengine",
+  "version": "1.0.0",
+  "description": "backend of the game engine",
+  "main": "build/index.js",
+  "author": "Johan <johan@codaisseur.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "bin/scripts/start",
+    "build": "tsc",
+    "lint": "tslint -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.7",
+    "dotenv-cli": "^2.0.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "nodemon": "^1.18.11",
+    "prettier": "^1.17.0",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.4.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged",
+      "pre-push": "yarn lint && yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "tslint -c tslint.json"
+    ]
+  }
+}

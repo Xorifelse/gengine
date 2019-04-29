@@ -10,7 +10,23 @@
       "esnext",
       "dom"
     ],
-    "strict": true,
+
+    "baseUrl": "src/",
+    "paths": {
+      "@/*": [
+        "/*"
+      ],
+      "@errors/*": [
+        "lib/errors/*"
+      ],
+      "@gql": [
+        "generated/index"
+      ],
+      "@interfaces/*": [
+        "lib/interfaces/*"
+      ]
+    },
+
     "allowJs": false,
     "removeComments": true,
     "noImplicitAny": true,
@@ -24,9 +40,10 @@
     "allowSyntheticDefaultImports": false,
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
   ],
   "include": [
-    "./src/**/*.ts"
+    "./src/**/*.ts",
+    "./src/**/*.gql"
   ]
 }

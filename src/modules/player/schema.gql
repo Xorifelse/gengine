@@ -1,0 +1,16 @@
+type Player {
+  id: ID!
+  name: String
+}
+
+type Query {
+  player: Player
+}
+
+type Mutation {
+  placeholder: String!
+}
+
+type Subscription {
+  placeholder: String!
+}

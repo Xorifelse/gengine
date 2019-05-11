@@ -13,19 +13,20 @@
 
     "baseUrl": "src/",
     "paths": {
+      "*": ["types/*"],
       "@/*": [
         "/*"
       ],
-      "@errors/*": [
-        "lib/errors/*"
+      "@lib/*": [
+        "/lib/**"
       ],
       "@gql": [
-        "generated/index"
+        "../generated/tstypes"
       ],
-      "@interfaces/*": [
-        "lib/interfaces/*"
-      ]
     },
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
 
     "allowJs": false,
     "removeComments": true,

@@ -2,7 +2,7 @@ overwrite: true
 schema: ${ENDPOINT}
 documents: null
 generates:
-  src/generated/index.ts:
+  generated/tstypes.ts:
     plugins:
       - "typescript"
       - "typescript-resolvers"

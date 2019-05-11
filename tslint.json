@@ -9,7 +9,7 @@
     "prettier": [
       true,
       {
-        "printWidth": 120,
+        "printWidth": 90,
         "singleQuote": true,
         "trailingComma": "es5",
         "semi": false
@@ -41,7 +41,7 @@
   ],
   "linterOptions": {
     "exclude": [
-      "src/generated/*"
+      "generated/*"
     ]
   }
 }

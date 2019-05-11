@@ -1,7 +1,5 @@
-import { Context } from '@interfaces/gql'
-
 export default {
-  me(parent: any, args: any, ctx: Context) {
+  me(parent: any, args: any, ctx: any) {
     return 'hello world!'
   },
 }

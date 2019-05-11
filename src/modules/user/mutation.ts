@@ -1,7 +1,6 @@
-import * as bcrypt from 'bcryptjs'
-import * as jwt from 'jsonwebtoken'
+// import * as bcrypt from 'bcryptjs'
+// import * as jwt from 'jsonwebtoken'
 
-import { Context } from '@interfaces/gql'
 
 const JWT_SECRET = process.env.JWT_SECRET as string
 
@@ -10,7 +9,7 @@ export interface IMutationLoginArgs {
   password: string
 }
 
-export const signup = async (parent: any, args: any, ctx: Context) => {
+export const signup = async (parent: any, args: any, ctx: any) => {
   return {
     token: 'world',
   }
@@ -23,7 +22,7 @@ export const signup = async (parent: any, args: any, ctx: Context) => {
   // }
 }
 
-export const signin = async (parent: any, { email, password }: IMutationLoginArgs, ctx: Context) => {
+export const signin = async (parent: any, { email, password }: IMutationLoginArgs, ctx: any) => {
   return {
     token: 'hello',
   }

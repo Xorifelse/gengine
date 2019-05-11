@@ -1,0 +1,3 @@
+#!/bin/bash
+
+graphql get-schema --endpoint $PRISMA_ENDPOINT --output generated/prisma.graphql --no-all

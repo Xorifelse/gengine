@@ -21,7 +21,11 @@ export const signup = async (parent: any, args: any, ctx: any) => {
   // }
 }
 
-export const signin = async (parent: any, { email, password }: IMutationLoginArgs, ctx: any) => {
+export const signin = async (
+  parent: any,
+  { email, password }: IMutationLoginArgs,
+  ctx: any
+) => {
   return {
     token: 'hello',
   }

@@ -69,9 +69,6 @@ const makeModulesSchema = async () =>
 
 const start = async () => {
   const schema = await makeModulesSchema()
-
-
-
 }
 
 start()
